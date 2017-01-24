@@ -23,6 +23,7 @@ Makefile text
 # server config
 .htaccess text
 *.example text
+*.travis text
 *.conf text
 
 # git config
@@ -74,6 +75,7 @@ examples/ export-ignore
 .travis.yml export-ignore
 .styleci.yml export-ignore
 .php_cs export-ignore
+.env.travis export-ignore
 phpcs.xml export-ignore
 phpmd.xml export-ignore
 phpunit.xml.dist export-ignore

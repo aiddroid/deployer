@@ -13,7 +13,7 @@ return [
      * a requirement when you cannot know the address
      * of your proxy (e.g. if using Rackspace balancers).
      */
-    'proxies' => env('TRUSTED_PROXIES', '*') === '*' ?: explode(',', env('TRUSTED_PROXIES')),
+    'proxies' => env('TRUSTED_PROXIES', '*') === '*' ?: explode(',', env('TRUSTED_PROXIES', '')),
 
     /*
      * Or, to trust all proxies, uncomment this:
