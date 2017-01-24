@@ -21,8 +21,8 @@ addons:
   mariadb: "10.1"
 
 env:
-  - DB_CONNECTION=mysql DB_USERNAME=travis DB_DATABASE=test DB_PORT=3306
-  - DB_CONNECTION=pgsql DB_USERNAME=postgres DB_DATABASE=deployer DB_PORT=5432
+  - DB_CONNECTION=mysql DB_USERNAME=travis DB_DATABASE=test
+  - DB_CONNECTION=pgsql DB_USERNAME=postgres DB_DATABASE=test
   - DB_CONNECTION=sqlite
 
 before_install:
